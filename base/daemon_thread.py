@@ -50,7 +50,7 @@ class KubernetesApi:
         if not getattr(self, 'apps_v1', None):
             self.apps_v1 = client.AppsV1Api(api_client)
         if not getattr(self, 'exentsions_v1', None):
-            self.extensions_v1 = client.ExtensionsV1beta1Api(api_client)
+            self.extensions_v1 = client.ApiextensionsV1Api(api_client)
 
 
 class CheckKubernetesDaemon:
